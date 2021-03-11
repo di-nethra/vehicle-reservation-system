@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vehical reservation system</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript" src="../js/myscript.js"></script>
+</head>
+<body class="bg1">
+
+<ul class="menue">
+    <li><a href="#"><img src="../images/logo.png" width=70></a></li>
+    <a href="sulaLogin.html"><li class="menue">Log in</li></a>
+    <a href="#"><li class="menue">Help</li></a>
+</ul>
+<div class="myimg">
+
+<form action="../php/admin.php" traget="_blank" method=post class="form" onsubmit="return checkpassword()">
+<input type="email" name="email" id="email" placeholder="Email" pattern="[a-zA-Z0-9+-_%]+@[a-z]+\.[a-z]{2,3}"required><br/> 
+<input type="text" name="fname" id="fname" placeholder="First Name" required>
+<input type="text" name="lname" id="lname" placeholder="Last Name" required><br/>
+<input type="number" name="tel" id="tel"  placeholder="phone" pattern="[0-9]{5,10}" required><br/>
+<input type="password" name="pass1" id="pass1" placeholder="Create Password" required><br/>
+<input type="password" name="pass2" id="pass2"placeholder="Confirm Password" required ><br/>
+<input type="text" name="city" id="city"placeholder="City"><br/>
+
+    
+</div>
+
+<p class="para1">By proceeding, I am consenting to receive calls or SMS messages,
+        including by automatic dialer, from Yaman and its affiliates to the
+        number I provide. I understand that I may opt out by texting “STOP” to
+        89203.<br/><Br/>
+            By proceeding, I am also agreeing to receive marketing communications
+        (including by automatic dialer) by SMS from Uber at the phone number
+        provided. These messages may promote Yaman's products and services, such
+        as rides, Yaman Eats, JUMP scooters and bikes, and those of our business
+        partners. I understand that consent to receiving these marketing
+        messages is not required to use Yaman’s services. I may always opt out
+        by texting STOP in reply to a message from Yaman.<br/><br/></br>
+
+        <input type="submit" name="submit" value="Sign Up" class="sub">
+        </p>
+    </form>
+   <a href="../php/interface.php"><button>Admin Login</button></a>
+   <a href="pageThree.html"><button>Next</button></a>
+
+
+    <ul class="footer">
+        <a href=""><li class="footer">|  T&C  |</li></a>
+        <a href=""><li class="footer">|  Privacy  |</li></a>
+        <a href=""><li class="footer">|  Policy  |</li></a>
+        <a href=""><li class="footer">|  Software  |</li></a>
+        <a href=""><li class="footer">|  Service  |</li></a>
+        <a href=""><li class="footer">|  Agreement  |</li></a>
+        <a href=""><li class="footer">|  Careers  |</li></a>
+        <a href=""><li class="footer">|  Contact  |</li></a>
+   
+        <a href="#"><img src="../images/image3.png" width=40 class=smid></a>
+        <a href="#"><img src="../images/image4.png" width=40 class=smid></a>
+        <a href="#"><img src="../images/image5.png" width=40 class=smid ></a>
+        <a href="#"><img src="../images/image6.png" width=40 class=smid></a>
+        <a href="#"><img src="../images/image7.png" width=40 class=smid></a>
+        <hr>
+        <center>
+        <h4>&copy Copyright &copy 2020 - PTS Corporation (Pvt) Ltd. All rights reserved.</h4>
+        </center>
+    </ul>
+
+
+
+</body>
+</html>

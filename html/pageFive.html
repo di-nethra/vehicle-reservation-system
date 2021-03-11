@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>destination page</title>
+	<link rel="stylesheet" type="text/css" href="../css/pageFive.css">
+	<script type="text/javascript" src="../js/pageFive.js"></script>
+</head>
+<body>
+
+<ul class="menue">
+	<li><a href="#"><img src="../images/logo.png" class="logo"></a></li>
+	<a href="#"><li class="menue">Help</li></a>
+	<a href="#"><li class="menue">User</li></a>
+</ul>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(6.927079,79.861244),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPYInAn_5DlsV7cz31oRneltRZezAPpc&callback=myMap"></script>
+
+<div>
+      <center>
+	  <a href="../php/panel.php"><button>Rating Panel</button></a>
+	  <button id="myBtn" class="btnRate">Rate Trip</button>
+	   
+	  </center>
+    <a href="pageNine.html"><button>Next</button></a>
+	  <form action="../php/star.php" method=post>
+	  <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="rate">
+		<form action="../php/star.php" method=post>
+         <input type="radio" id="star5" name="rate" value="5" />
+          <label for="star5" title="text">5 star</label>
+          <input type="radio" id="star4" name="rate" value="4" />
+          <label for="star4" title="text">4 star</label>
+          <input type="radio" id="star3" name="rate" value="3" />
+          <label for="star3" title="text">3 star</label>
+          <input type="radio" id="star2" name="rate" value="2" />
+          <label for="star2" title="text">2 star</label>
+          <input type="radio" id="star1" name="rate" value="1" />
+          <label for="star1" title="text">1 star</label>
+		  <center>
+		  <br>
+	  <button id="rate class="btnRate">Rate Trip</button>
+
+	  </center>
+		  </form>
+		  
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    var modal = document.getElementById("myModal");
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+  </div>
+
+    <ul class="footer">
+    	<a href=""><li class="footer">|  T&C  |</li></a>
+    	<a href=""><li class="footer">|  Privacy  |</li></a>
+    	<a href=""><li class="footer">|  Policy  |</li></a>
+    	<a href=""><li class="footer">|  Software  |</li></a>
+    	<a href=""><li class="footer">|  Service  |</li></a>
+    	<a href=""><li class="footer">|  Agreement  |</li></a>
+    	<a href=""><li class="footer">|  Careers  |</li></a>
+    	<a href=""><li class="footer">|  Contact  |</li></a>
+   
+    	<a href="#"><img src="../images/image3.png" width=40 class="smid"></a>
+    	<a href="#"><img src="../images/image4.png" width=40 class="smid"></a>
+    	<a href="#"><img src="../images/image5.png" width=40 class="smid" ></a>
+    	<a href="#"><img src="../images/image6.png" width=40 class="smid"></a>
+    	<a href="#"><img src="../images/image7.png" width=40 class="smid"></a>
+    	<hr>
+    	<center>
+    	<h4>&copy Copyright &copy 2020 - PTS Corporation (Pvt) Ltd. All rights reserved.</h4>
+    	</center>
+    </ul>
+
+
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+.logo{
+	height:100;
+	position: relative;
+	margin-top:10px;
+	margin-bottom:-20px;
+	margin-left:20px;
+}
+.form{
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  max-width: 300px;
+  padding:35px;
+  
+}
+input{
+  width: 75%;
+  padding:8px;
+  margin: 0px 0 15px 5px;
+  border: none;
+  background: #f1f1f1;
+}
+.sub{
+  opacity:0.9;
+  color:white;
+  font-size: 15px;
+  background-color: #000000;
+  padding: 8px 60px;
+  margin-bottom: 20px;
+}
+.sub:hover{
+	color: darkgoldenrod;
+}
+ul.menue{
+	list-style-type:none;
+	background-color:#ffbf00;
+	padding:0px;
+	margin:0px; 
+	overflow:hidden;
+
+}
+li.menue{
+	float:right;
+	position:relative;
+	padding-left:20px; 
+	padding-right:20px; 
+	padding-bottom: 5px;
+	padding-top: 5px;
+    bottom:20px;
+	margin-left:10px;
+	margin-right:10px;
+	--text-shadow: 2px 2px 5px #483D8B;
+	  --justify-content: center;
+	color: black;
+	font-size:20px;
+	border: 3px solid #000000;
+	border-radius: 20px;
+}
+
+li.menue:hover{
+	background-color:#faecad;
+	font-size:20px;
+	border: 3px solid #000000;
+	border-radius: 20px;
+	opacity:1;
+}
+
+
+a li {
+	display:block;
+	color:white;
+	padding:0px;
+	text-decoration:none;
+	text-align:center;
+}
+a li:hover{
+	background-color:#B8860B;
+	text-align:center;
+	border: 2px solid #ff8000;
+    border-radius: 12px;
+}
+
+ul.footer{
+	margin-top:100px;
+	list-style-type:none;
+	background-color:#ffbf00;
+	padding:5px;
+	margin:0px; 
+	overflow:hidden;
+	border: 2px solid black;
+}
+li.footer{
+	float:left;
+	position:relative;
+	padding:10px; 
+	text-shadow: 2px 2px 5px #483D8B;
+	font-size:15px;
+}
+.smid{
+	position:relative;
+	padding-left:30px;
+}
+
+h2{
+	color:#333;
+}
+button{
+  
+  color:black;
+  font-size: 15px;
+  background-color: white; 
+  opacity:0.7;
+  padding: 5px 50px;
+  margin-bottom: 20px;
+  border: 2px solid #ff8000;
+  border-radius: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  
+}
+button:hover{
+   opacity:1;
+   color:black;
+   background-color: #faecad; 
+
+}
+
+.search{
+	border: 2px solid #000000;
+	border-radius: 20px;
+	width:500px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rate {
+  float: center;
+  height: 5rem;
+  padding: none;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 15rem;
+  color: #ccc;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+
+}
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}

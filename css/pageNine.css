@@ -1,0 +1,79 @@
+.yello-box{
+
+}
+
+.card-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    width: 60%;
+    height: 60%;
+}
+
+.slogan{
+    text-align: right;
+    margin-right: 10%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+  
+.justify-around {
+  justify-content: space-around;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.bg-yellow-500 {
+  --bg-opacity: 1;
+  background-color: #ecc94b;
+  background-color: rgba(236, 201, 75, var(--bg-opacity));
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-black {
+  font-weight: 900;
+}
+
+  
